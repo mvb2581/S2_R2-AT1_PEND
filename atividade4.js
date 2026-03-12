@@ -7,7 +7,8 @@ btnAdicionar.addEventListener("click", () => {
 
     const textoTarefa = inputTarefa.value;
 
-    if(textoTarefa.trim() === ""){
+ 
+    if (textoTarefa.trim() === "") {
 
         mensagem.innerHTML = `
         <div class="alert alert-danger">
@@ -17,16 +18,22 @@ btnAdicionar.addEventListener("click", () => {
 
     } else {
 
+       
         const novaTarefa = document.createElement("li");
 
+     
         novaTarefa.classList.add("list-group-item");
 
+       
         novaTarefa.innerText = textoTarefa;
 
+        
         listaTarefas.appendChild(novaTarefa);
 
+        
         inputTarefa.value = "";
 
+       
         mensagem.innerHTML = `
         <div class="alert alert-success">
             Tarefa adicionada com sucesso!
