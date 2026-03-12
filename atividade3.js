@@ -1,21 +1,21 @@
-const input = document.getElementById("inputItem");
-const botao = document.getElementById("btnAdicionar");
+const inputItem = document.getElementById("inputItem");
+const btnAdicionar = document.getElementById("btnAdicionar");
 const lista = document.getElementById("listaItens");
 
-botao.addEventListener("click", () => {
+btnAdicionar.addEventListener("click", () => {
 
-    const valor = input.value;
+    const texto = inputItem.value;
 
-    if(valor.trim() !== ""){
+    if(texto.trim() !== ""){
 
         const novoItem = document.createElement("li");
 
-        novoItem.innerText = valor;
+        novoItem.innerText = texto;
         novoItem.classList.add("list-group-item");
 
         lista.appendChild(novoItem);
 
-        input.value = "";
+        inputItem.value = "";
     }
 
 });
