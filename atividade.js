@@ -14,7 +14,7 @@ btn.addEventListener("click", () => {
 
       
         mensagem.innerText = `Olá, ${nomeDigitado}! Seja bem-vindo!`;
-
+        //diz que quando colocado um nome vai mostrar uma mensagem de bem vindo, e aparecendo uma cor verde, já quando não colocou nada, aparece para inserir um texto e aparece em vermelho 
         
         mensagem.style.color = "green";
 
