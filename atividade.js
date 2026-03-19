@@ -14,7 +14,7 @@ btnAdicionar.addEventListener("click", () => {
             Tarefa vazia!
         </div>
         `;
-
+        //manda voce inserir uma atividade, e caso esteja vazia mostra tarefa vazia em vermelho por conta do danger 
     } else {
 
         const novaTarefa = document.createElement("li");
@@ -32,6 +32,7 @@ btnAdicionar.addEventListener("click", () => {
             Tarefa adicionada com sucesso!
         </div>
         `;
+        //nessa quando vc adiciona a tarefa aparece em verde um alert de success colocando ela em lista
     }
 
 });
