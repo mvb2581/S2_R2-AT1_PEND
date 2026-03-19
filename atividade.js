@@ -17,5 +17,5 @@ botao.addEventListener("click", () => {
 
         input.value = "";
     }
-
+    //adiciona um novo item na lista :)
 });
